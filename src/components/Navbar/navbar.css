@@ -1,0 +1,28 @@
+    .wrapper {
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        background: #292929;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    .logo-wrapper {
+        padding: 40px;
+        padding-left: 10%;
+    }
+    
+    @media (max-width: 540px) {
+        .logo-wrapper {
+            padding-left: 30%;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .logo-wrapper {
+            padding-left: 30%;
+        }
+    }
