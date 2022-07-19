@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import API_KEY from '../.env';
 import './movies.css'
 import axios from 'axios';
 
