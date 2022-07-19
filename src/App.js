@@ -2,7 +2,7 @@ import './App.css';
 import Banner from './components/Banner';
 import Layout from './components/Layout'
 
-import Movies from './components/Movies'
+import Movies from './components/Information'
 
 function App() {
   return (

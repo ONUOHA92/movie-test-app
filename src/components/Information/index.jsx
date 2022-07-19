@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import API_KEY from '../.env';
 import './movies.css'
 import axios from 'axios';
 
@@ -6,12 +7,12 @@ import axios from 'axios';
 function Movies(props) {
     const [movies, setMovives] = useState([])
     const [keyword, setKeyword] = useState('')
-    const [loading, setLoading] = useState(false)
+
 
 
     async function fetchMovies() {
         try {
-            let response = await axios.get('http://www.omdbapi.com/?apikey=c8a7eee5&s=batman');
+            let response = await axios.get(`http://www.omdbapi.com/?apikey=c8a7eee5&s=batman`);
             const data = response.data.Search
             setMovives(data)
 
