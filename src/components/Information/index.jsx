@@ -11,7 +11,7 @@ function Movies(props) {
 
     async function fetchMovies() {
         try {
-            let response = await axios.get(`http://www.omdbapi.com/?apikey=c8a7eee5&s=batman`);
+            let response = await axios.get(`https://www.omdbapi.com/?apikey=c8a7eee5&s=batman`);
             const data = response.data.Search
             setMovives(data)
 
@@ -35,7 +35,7 @@ function Movies(props) {
 
     const searchMove = async () => {
         try {
-            let response = await axios.get(`http://www.omdbapi.com/?apikey=c8a7eee5&s=${keyword}`);
+            let response = await axios.get(`https://www.omdbapi.com/?apikey=c8a7eee5&s=${keyword}`);
             const data = response.data.Search
             setMovives(data)
 
